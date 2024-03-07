@@ -31,13 +31,13 @@ KAFKA_PORT:
 KAFKA_HOST:
 KAFKA_USERNAME:
 KAFKA_PASSWORD:
-SQL_ENABLED:T
-SQL_PORT:5432
-SQL_USERNAME:postgres
-SQL_PASSWORD:postgres
-SQL_HOST:localhost
-SQL_DB:Product_service
-SQL_DRIVER:postgres
+SQL_ENABLED:
+SQL_PORT:
+SQL_USERNAME:
+SQL_PASSWORD:
+SQL_HOST:
+SQL_DB:
+SQL_DRIVER:
 MYSQL_ENABLED:
 MYSQL_PORT:
 MYSQL_HOST:
@@ -46,6 +46,7 @@ MYSQL_PASSWORD:
 MYSQL_DB:
 MYSQL_DRIVER:
 Ниже предоставлен простой код, который инициализирует необходимое подключение кладет и достает из него данные:
+```
 ```go
 package main
 
@@ -74,6 +75,7 @@ func main() {
 	fmt.Println(val)
 	testCon.CloseAllConnections()
 }
+```
 
 ```text
 Output:
