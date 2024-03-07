@@ -13,7 +13,8 @@ conn.CloseAllConnections() // инициализация отключения
 ```
 ## Example of usage
 ```text
-В примере я использую conf.txt для установки переменных окружения.(всегда создаем conf.txt, если 
+В примере я использую conf.txt для установки переменных окружения.(всегда создаем conf.txt, если
+переменные из окружения берутся из другого места, то оставляем его пустым)
 config configuration:
 REDIS_ENABLED:T
 REDIS_HOST:localhost
